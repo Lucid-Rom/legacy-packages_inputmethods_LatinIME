@@ -20,6 +20,14 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <style name="platformActivityTheme" parent="@android:style/Theme.DeviceDefault.Light" />
-    <style name="platformSettingsTheme" parent="@android:style/Theme.DeviceDefault.Light" />
-    <style name="platformDialogTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog" />
+    <style name="platformSettingsTheme" parent="@android:style/Theme.Material">
+      <!-- Used by the ActionBar -->
+      <item name="android:colorPrimary">@color/theme_primary</item>
+      <!-- Used by the StatusBar -->
+      <item name="android:colorPrimaryDark">@color/theme_primary_dark</item>
+      <!-- Used by controls, e.g. CheckBox, ProgressBar, etc. -->
+      <item name="android:colorAccent">@color/theme_accent</item>
+      <item name="android:colorBackground">@*android:drawable/material_bg_blue_grey</item>
+    </style>
+    <style name="platformDialogTheme" parent="@*android:style/Theme.Material.Dialog.Dark" />
 </resources>
