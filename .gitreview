@@ -1,0 +1,5 @@
+[gerrit]
+host=gerrit.lucidroms.org
+port=29418
+project=packages_inputmethods_LatinIME.git
+defaultbranch=lucid-5.1
